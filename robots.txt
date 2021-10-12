@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap:https://www.ashishneupane.info.np/sitemap.xml
