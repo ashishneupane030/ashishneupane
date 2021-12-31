@@ -1298,6 +1298,8 @@ contact section
    text-align: right;
    padding:0 15px;
 }
+
+
 /*for popup window*/
 *
 {
@@ -1388,8 +1390,8 @@ z-index: 1;
 .contentBox .content h3
 {
 color: #333;
-line-height: 1.5em;
-font-weight: 150;
+line-height: 2em;
+font-weight: 300;
 font-size: 1em;
 }
 .contentBox .content h2
@@ -1401,7 +1403,7 @@ font-size: 1em;
 .contentBox .content h2 span
 {
     color: #333;
-    font-size: 0.5em;
+    font-size: 0.75em;
     text-transform: uppercase;
 }
 .contentBox .content p
@@ -1435,7 +1437,6 @@ font-size: 1em;
     z-index: 10;
     cursor: pointer;
 }
-
 
 /* for payment window*/
 * 
