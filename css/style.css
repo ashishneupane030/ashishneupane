@@ -1298,9 +1298,145 @@ contact section
    text-align: right;
    padding:0 15px;
 }
-
-
 /*for popup window*/
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+   
+}
+body
+{
+min-height: 50vh;
+background: solid;
+position: relative;
+}
+
+.popup 
+{
+visibility: hidden;
+position: absolute;
+width:50vw;
+height: 50vh;
+display: flex;
+pointer-events: none;
+align-items: center;
+justify-content: center;
+z-index: 1200;
+background: solid;
+transition: 250ms transform ease-out;
+transform: scale(.95);
+transform-origin: center;
+}
+
+.popup.active{
+   transform: scale(1);
+   visibility: visible;
+   pointer-events: all;
+}
+
+
+.contentBox
+{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+}
+
+
+
+.contentBox .imgBx
+{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentBox .imgBx::before
+{
+     content: '';
+     position: absolute;
+     width: 125px;
+     height: 125px;
+     background: #e7ffe0;
+     border-radius: 25%;
+
+}
+.contentBox .imgBx img
+{
+position: relative;
+max-width: 125px;
+z-index: 1;
+}
+.contentBox .content 
+{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentBox .content h3
+{
+color: #333;
+line-height: 1.5em;
+font-weight: 150;
+font-size: 1em;
+}
+.contentBox .content h2
+{
+    font-size: 2em;
+    color: #ff4d54;
+    line-height: 0.4em;
+}
+.contentBox .content h2 span
+{
+    color: #333;
+    font-size: 0.5em;
+    text-transform: uppercase;
+}
+.contentBox .content p
+{
+    font-weight: 150;
+}
+.contentBox .content a
+{
+    display: inline-block;
+    padding: 5px 10px;
+    background: #ff4d54;
+    color: #fff;
+    margin-top: 7px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.close
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    border-radius: 25%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/*for popup window
 *
 {
    margin: 0;
