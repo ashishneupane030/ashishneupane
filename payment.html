@@ -17,20 +17,20 @@
 <h3>Registration Form</h3>
 
 <div class="form-group">
-<input type="text" placeholder="First Name" class="form-control" required>
-<input type="text" placeholder="Last Name" class="form-control">
+<input type="text" placeholder="First Name" class="form-control" name="name" required>
+<input type="text" placeholder="Last Name" class="form-control" name="name">
 </div>
 
 <div class="form-wrapper">
-<input type="text" placeholder="Email Address" class="form-control" required>
+<input type="text" placeholder="Email Address" class="form-control" name="email" required>
 </div>
 
 <div class="form-wrapper">
-  <input type="number" placeholder="Esewa Id" class="form-control" required>
+  <input type="number" placeholder="Esewa Id" class="form-control" name="number" required>
   </div>
 
 <div class="form-wrapper">
-<select name="" id="" class="form-control">
+<select name="" id="" class="form-control" name="gender">
 <option value="" disabled selected>Gender</option>
 <option value="male">Male</option>
 <option value="femal">Female</option>
@@ -39,7 +39,7 @@
 </div>
 
 <div class="form-wrapper">
-  <input type="file" onchange="readURL(this)" accept="Image/*" required>
+  <input type="file" onchange="readURL(this)" accept="Image/*" name="file" required>
 </div>
 
 <button>Submit</button>
