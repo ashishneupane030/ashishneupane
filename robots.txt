@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap:https://www.ashishneupane.info.np/sitemap_
+Sitemap:https://www.ashishneupane.info.np/
 
 
